@@ -54,6 +54,7 @@ class Car {
                 <p>Plat Nomer: ${this.plate}</p>
                 <p>Tipe Driver: ${this.typeDriver}</p>
                 <p>Tersedia Pada: ${this.availableAt}</p>
+                <p>Waktu: ${this.timeAt}</p>
                 <p>${this.description}</p>
                 <p>Kapasitas: ${this.capacity} Orang</p>
                 <p> ${this.transmission}</p>
@@ -74,6 +75,7 @@ class Car {
                 <p>Plat Nomer: ${this.plate}</p>
                 <p>Tipe Driver: ${this.typeDriver}</p>
                 <p>Tersedia Pada: ${this.availableAt}</p>
+                <p>Waktu: ${this.timeAt}</p>
                 <p>${this.description}</p>
                 <p>Kapasitas: ${this.capacity} Orang</p>
                 <p> ${this.transmission}</p>
@@ -94,6 +96,7 @@ class Car {
                 <p>Plat Nomer: ${this.plate}</p>
                 <p>Tipe Driver: ${this.typeDriver}</p>
                 <p>Tersedia Pada: ${this.availableAt}</p>
+                <p>Waktu: ${this.timeAt}</p>
                 <p>${this.description}</p>
                 <p>Kapasitas: ${this.capacity} Orang</p>
                 <p> ${this.transmission}</p>
@@ -114,6 +117,7 @@ class Car {
                 <p>Plat Nomer: ${this.plate}</p>
                 <p>Tipe Driver: ${this.typeDriver}</p>
                 <p>Tersedia Pada: ${this.availableAt}</p>
+                <p>Waktu: ${this.timeAt}</p>
                 <p>${this.description}</p>
                 <p>Kapasitas: ${this.capacity} Orang</p>
                 <p> ${this.transmission}</p>

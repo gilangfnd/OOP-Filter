@@ -23,6 +23,30 @@ class App {
     });
   };
 
+  // async filter() {
+  //   const driver = document.getElementById("tipedriver").value
+  //   console.log(driver)
+  //   const tanggal = document.getElementById("tanggal").value
+  //   console.log(tanggal)
+  //   const cars = await Binar.listCars((e) => {
+  //     // tambahkan fungsi filter
+  //     const td = e.typeDriver === driver;
+  //     const te = e.availableAt = tanggal;
+      
+
+  //     // return e.typeDriver === driver
+  //     return td && te
+  //   });
+  //   Car.init(cars);
+  //   document.getElementById("cars-container").innerHTML = ''
+  //   Car.list.forEach((car) => {
+  //     const node = document.createElement("div");
+
+  //     node.innerHTML = car.render();
+  //     document.getElementById("cars-container").appendChild(node);
+  //   });
+  // }
+
   async filter() {
     const driver = document.getElementById("tipedriver").value
     console.log(driver)
@@ -30,14 +54,17 @@ class App {
     console.log(tanggal)
     const jumlahpenumpang = document.getElementById("jumlahpenumpang").value
     console.log(jumlahpenumpang)
+    const waktu = document.getElementById("waktu").value
+    console.log(waktu)
     const cars = await Binar.listCars((e) => {
       // tambahkan fungsi filter
       const td = e.typeDriver === driver;
       const pe = e.capacity = jumlahpenumpang;
       const te = e.availableAt = tanggal;
+      const wt = e.timeAt = waktu;
 
       // return e.typeDriver === driver
-      return td && pe && te
+      return td && pe && te && wt
     });
     Car.init(cars);
     document.getElementById("cars-container").innerHTML = ''
