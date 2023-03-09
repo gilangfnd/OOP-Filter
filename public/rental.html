@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Sabrina" />
+    <meta name="description" content="Lorem ipsum dolor sit amet" />
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>Binar: Challenge 04</title>
+
+    <!-- Example CSS -->
+    <link rel="stylesheet" href="assets/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Halvetica" />
+    <link href="./css/rental.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <body>
+        <nav class="navbar navbar-expand-lg sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BCR</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="d-flex justify-content-end col-3 col-md-3 col-lg-12">
+                        <ul class="navbar-nav gap-4 ps-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#our-services">Our Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#why-us">Why Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#why-us">Testimonial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#faq">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-green" href="#register">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+
+        <section id="banner">
+            <div class="container pt-4">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-12 col-lg-6 fill">
+                        <h1>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+                        <p>
+                            Selamat datang di Binar Car Rental. Kami menyediakan mobil
+                            kualitas terbaik dengan harga terjangkau. Selalu siap melayani
+                            kebutuhanmu untuk sewa mobil selama 24 jam.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 fill d-flex justify-content-end px-0">
+                        <img src="assets/img_car.png" class="img-fluid ps-4" alt="Responsive image" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Filtering -->
+        <div id="filter">
+            <div class="container">
+                <div class="border rounded shadow">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3 p-4">
+                            <p class="panel-text">Tipe Driver</p>
+                            <select id="tipedriver" class="form-select" aria-label="Default Select example">
+                                <option selected>Pilih Tipe Driver</option>
+                                <option value="Dengan Supir">Dengan Supir</option>
+                                <option value="Lepas Kunci">Tanpa Sopir (Lepas Kunci)</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2 p-4">
+                            <p class="panel-text">Tanggal</p>
+                            <input class="form-select" type="date" id="tanggal" name="tanggal">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-2 p-4">
+                            <p class="panel-text">Waktu Jemput/Ambil</p>
+                            <input class="form-select" type="time" id="waktu" name="waktu">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 p-4">
+                            <p class="panel-text">Jumlah Penumpang(Optional)</p>
+                            <select id="jumlahpenumpang" class="form-select" aria-label="Default Select example">
+                                <option selected>Jumlah Penumpang</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                        <div class="d-grid align-items-center col-12 col-md-12 col-lg-2 p-4">
+                            <button id="cari-mobil" type="button" class="btn btn-green">Cari Mobil</button>
+                        </div>
+                        <!-- <div class="d-flex align-items-center justify-content-end col-12 col-md-6 col-lg-2 p-4">
+                            <button id="cari-mobil" type="button" class="btn btn-green">Cari Mobil</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="cars-container"></div>
+           
+
+        <!-- Footer -->
+
+        <footer>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 fill">
+                        <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+                        <p>binarcarrental@gmail.com</p>
+                        <p>081-233-334-808</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-2 fill">
+                        <p>Our services</p>
+                        <p>Why Us</p>
+                        <p>Testimonial</p>
+                        <p>FAQ</p>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 fill">
+                        <p>Connect with us</p>
+                        <div class="image">
+                            <img src="assets/facebook.jfif" />
+                            <img src="assets/instagram.jfif" />
+                            <img src="assets/twitter.jfif" />
+                            <img src="assets/pesan.jfif" />
+                            <img src="assets/comment.jfif" />
+                        </div>
+                    </div>
+                    <div class="col-3 col-md-6 col-lg-3 fill">
+                        <p>Copyright Binar 2022</p>
+                        <div class="brand"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Example Javascript -->
+        <script type="text/javascript" src="./scripts/binar.js"></script>
+        <script type="text/javascript" src="./scripts/app.example.js"></script>
+        <script type="text/javascript" src="./scripts/car.example.js"></script>
+        <script type="text/javascript" src="./scripts/main.example.js"></script>
+    </body>
+
+</html>
